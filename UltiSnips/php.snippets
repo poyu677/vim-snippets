@@ -145,79 +145,55 @@ $0
 endsnippet
 
 snippet pub "Public function" b
-/**
- * ${3:undocumented function}
- *
- * @return ${4:void}
- */
+${3:// Need Some Document?}
 public function ${1:name}(${2:$param})
 {
-	${VISUAL}${5:return null;}
+	${VISUAL}${4://code}
 }
 $0
 endsnippet
 
 snippet pro "Protected function" b
-/**
- * ${3:undocumented function}
- *
- * @return ${4:void}
- */
-protected function ${1:name}(${2:$param})
+${3:// Need Some Document?}
+protect function ${1:name}(${2:$param})
 {
-	${VISUAL}${5:return null;}
+	${VISUAL}${4://code}
 }
 $0
 endsnippet
 
 snippet pri "Private function" b
-/**
- * ${3:undocumented function}
- *
- * @return ${4:void}
- */
+${3:// Need Some Document?}
 private function ${1:name}(${2:$param})
 {
-	${VISUAL}${5:return null;}
+	${VISUAL}${4://code}
 }
 $0
 endsnippet
 
 snippet pubs "Public static function" b
-/**
- * ${3:undocumented function}
- *
- * @return ${4:void}
- */
+${3:// Need Some Document?}
 public static function ${1:name}(${2:$param})
 {
-	${VISUAL}${5:return null;}
+	${VISUAL}${4://code}
 }
 $0
 endsnippet
 
 snippet pros "Protected static function" b
-/**
- * ${3:undocumented function}
- *
- * @return ${4:void}
- */
-protected static function ${1:name}(${2:$param})
+${3:// Need Some Document?}
+protecetd static function ${1:name}(${2:$param})
 {
-	${VISUAL}${5:return null;}
+	${VISUAL}${4://code}
 }
 $0
 endsnippet
 
 snippet pris "Private static function" b
-/**
- * ${3:undocumented function}
- *
- * @return ${4:void}
- */
+${3:// Need Some Document?}
 private static function ${1:name}(${2:$param})
 {
-	${VISUAL}${5:return null;}
+	${VISUAL}${4://code}
 }
 $0
 endsnippet
@@ -252,33 +228,24 @@ $0
 endsnippet
 
 snippet class "Class declaration template" b
-/**
- * Class ${2:`!p snip.rv=snip.fn.split('.')[0]`}
- * @author ${3:`!v g:snips_author`}
- */
-$1class $2
+class ${1:`!p snip.rv=snip.fn.split('.')[0]`}
 {
-	public function ${4:__construct}(${5:$options})
-	{
-		${6:// code}
-	}
+	$0
 }
-$0
+endsnippet
+
+snippet classe "Class declaration template with extends"
+class ${1:`!p snip.rv=snip.fn.split('.')[0]`} extends $2
+{
+	$0
+}
 endsnippet
 
 snippet interface "interface declaration template" b
-/**
- * Interface ${1:`!p snip.rv=snip.fn.split('.')[0]`}
- * @author ${2:`!v g:snips_author`}
- */
-interface $1
+interface ${1:`!p snip.rv=snip.fn.split('.')[0]`}
 {
-	public function ${3:__construct}(${4:$options})
-	{
-		${5:// code}
-	}
+	$0
 }
-$0
 endsnippet
 
 snippet construct "__construct()" b
