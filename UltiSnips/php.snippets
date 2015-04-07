@@ -273,6 +273,13 @@ class ${1:`!p snip.rv=snip.fn.split('.')[0]`} extends $2
 }
 endsnippet
 
+snippet classi "Class declaration template with extends"
+class ${1:`!p snip.rv=snip.fn.split('.')[0]`} implements $2
+{
+	$0
+}
+endsnippet
+
 snippet interface "interface declaration template" b
 interface ${1:`!p snip.rv=snip.fn.split('.')[0]`}
 {
@@ -317,4 +324,12 @@ snippet inheritdoc "@inheritdoc docblock"
  */
 endsnippet
 
+snippet reqk "kklibs"
+require_once '/kkcorp/kklibs/init.inc.php';
+$0
+endsnippet
+
+snippet cons "const"
+const $1 = $2;$0
+endsnippet
 # :vim:ft=snippets:
