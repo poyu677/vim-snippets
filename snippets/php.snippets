@@ -350,8 +350,6 @@ snippet foreachkil "<?php foreach ($var as $key => $value): ?>  ... <?php endfor
 	<?php foreach ($${1:variable} as $${2:key} => $${3:value}): ?>
 		${0:<!-- html... -->}
 	<?php endforeach; ?>
-snippet array "$... = ['' => ]"
-	$${1:arrayName} = ['${2}' => ${3}];
 snippet try "try { ... } catch (Exception $e) { ... }"
 	try {
 		${0:${VISUAL}}
