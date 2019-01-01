@@ -116,9 +116,9 @@ snippet inc
 snippet inc1
 	include_once '${1:file}';
 snippet req
-	require '${1:file}';
+	require ${1:__DIR__ . '/vendor/autoload.php'};
 snippet req1
-	require_once '${1:file}';
+	require_once ${1:__DIR__ . '/vendor/autoload.php'};
 # Start Docblock
 snippet /*
 	/**
