@@ -177,6 +177,28 @@ class ${1:`!p snip.rv=snip.basename`}
 }
 endsnippet
 
+snippet classi "Class declaration template with implements" b
+<?php
+
+namespace ${3};
+
+class ${1:`!p snip.rv=snip.basename`} implements ${2}
+{
+    $0
+}
+endsnippet
+
+snippet classe "Class declaration template with extends" b
+<?php
+
+namespace ${3};
+
+class ${1:`!p snip.rv=snip.basename`} extends ${2}
+{
+    $0
+}
+endsnippet
+
 snippet interface "Interface declaration template" b
 <?php
 
